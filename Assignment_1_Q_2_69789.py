@@ -1,4 +1,4 @@
-def custom_input(input_msg):
+def check_input(input_msg):
     while True:
         try:
             number = int(input(input_msg))
@@ -24,12 +24,12 @@ def custom_input(input_msg):
 
 name = input("Enter your name: ")
 
-biology_marks = custom_input("Enter Biology Marks: ")
-physics_marks = custom_input("Enter Physics Marks: ")
-chemistry_marks = custom_input("Enter Chemistry Marks: ")
-english_marks = custom_input("Enter English Marks: ")
-urdu_marks = custom_input("Enter Urdu Marks: ")
-islamiat_marks = custom_input("Enter Islamiat Marks: ")
+biology_marks = check_input("Enter Biology Marks: ")
+physics_marks = check_input("Enter Physics Marks: ")
+chemistry_marks = check_input("Enter Chemistry Marks: ")
+english_marks = check_input("Enter English Marks: ")
+urdu_marks = check_input("Enter Urdu Marks: ")
+islamiat_marks = check_input("Enter Islamiat Marks: ")
 
 
 
@@ -50,4 +50,5 @@ print("English\t\t\t ", english_marks,"\t\t 100")
 print("Urdu\t\t\t ",urdu_marks,"\t\t 100")
 print("Islamiat\t\t ",islamiat_marks,"\t\t 50")
 print("\nTOTAL\t\t",obtained_marks,"\t\t",total_marks)
-print("\nPercentage: ",percentage*100)
+print("\n\tPercentage: ",percentage*100)
+print("\n")
